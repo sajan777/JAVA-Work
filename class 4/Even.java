@@ -15,8 +15,7 @@ class Even{
 			//loop to check the Even no till the no given
 			if(i%2 == 0){
 				System.out.println("Even: "+i);
-			}
-	
+			}//end of loop	
 	}
 	
 }

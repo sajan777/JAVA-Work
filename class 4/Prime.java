@@ -23,11 +23,11 @@ class Prime{
 				break;
 				//as soon as the we found the match break statement breaks from the loop 
 			}
-		}
+		}//end of inner loop
 		//the flag var would only be zero if the condition didnt satisfy
 		if(flag==0){System.out.println("Prime no: "+ i);}
 		
-	}
+	}//end of outer loop
 
 		
 		
