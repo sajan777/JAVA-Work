@@ -23,7 +23,7 @@ class Array_Waveform{
 	}//end of outer loop
 	System.out.println("Final Output: ");
 	for(int i=0;i<arry.length;i++){
-		System.out.println( "Array "+arry[i]);
+		System.out.println( "Aray: "+i+" "+arry[i]);
 	}
 	//loop to print out the contents in the array.after replacing
 }
