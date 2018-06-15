@@ -12,7 +12,7 @@ abstract class Animal{
 	
 	abstract public void speak();
 	//abstract method only defined not methods inside its due to its abstract nature
-	public void eat(){
+	pub8lic void eat(){
 		//eat method is defined 
 		System.out.println("Dog Eat: "+"Dog Food");
 	}
