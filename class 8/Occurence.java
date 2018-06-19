@@ -29,16 +29,15 @@ int flag=0;
 				for(int j=0;j<array2.length-1;j++){
 					if(array1[i] == array2[j]){
 						flag++;}
-						else
-							flag=0;
+					
 				}
 			}
 			if(flag==array2.length)
 				System.out.println("yes the string is present");
 				else
 					System.out.println("no the string is not present");
-			
-			*/	
+		*/	
+		
 	}
 	
 }
