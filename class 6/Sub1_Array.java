@@ -1,4 +1,4 @@
-class Sub_Array{
+class Sub1_Array{
 	
 	public static void main(String[] args){
 		int val = 1,max=1;
