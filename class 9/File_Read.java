@@ -11,7 +11,7 @@ class File_Read{
 		int c;
 		while(( c = fis.read()) != -1){
 		//loop to check till the end of the file
-		System.out.println((char)c);
+		System.out.print((char)c);
 		//convert the int into char using (char)
 	}
 	}
