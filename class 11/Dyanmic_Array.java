@@ -7,18 +7,21 @@ class Dyanmic_Array{
 		//create an obj of the class
 		
 		//time to add elements just like in the arrayLists
-		va.addElements(6);
 		va.addElements(1);
 		va.addElements(2);
 		va.addElements(3);
 		va.addElements(4);
 		va.addElements(5);
+		va.addElements(6);
 		va.addElements(7);
 		va.addElements(8);
 		va.addElements(9);
 		va.addElements(10);
 		va.addElements(11);
 		va.addElements(12);
+		va.addElements(13);
+		va.addElements(14);
+		va.addElements(15);
 		//used to display the elements 
 		va.display();
 		
