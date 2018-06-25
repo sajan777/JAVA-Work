@@ -25,7 +25,7 @@ class HashMap_Demo{
 			System.out.print(map.getKey() + ":- ");
 			//map.getKey() gives the key
 			System.out.println(map.getValue() + "");
-			//map.getKey() gives the Value
+			//map.getKey() gives the ValueBase
 		}	
 	}
 }
