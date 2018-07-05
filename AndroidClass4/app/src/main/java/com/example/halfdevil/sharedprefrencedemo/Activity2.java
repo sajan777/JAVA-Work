@@ -25,10 +25,10 @@ public class Activity2 extends AppCompatActivity {
 
 
 
-        username = (EditText)findViewById(R.id.email);
+        username = (EditText)findViewById(R.id.user);
         password = (EditText)findViewById(R.id.password);
         t = (TextView)findViewById(R.id.t);
-        p = (TextView)findViewById(R.id.email);
+        p = (TextView)findViewById(R.id.user);
 
         login = (Button)findViewById(R.id.login);
 

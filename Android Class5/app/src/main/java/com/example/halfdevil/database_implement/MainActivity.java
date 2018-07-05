@@ -1,60 +1,53 @@
-package com.example.halfdevil.sharedprefrencedemo;
+package com.example.halfdevil.database_implement;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import  android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     Button Login,signup;
-    EditText UserId,Pass,Email,dob;
+    EditText username,Email,dob,password;
     TextView u,p,e,d;
-
-
-    //SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        UserId = (EditText)findViewById(R.id.UserId);
         Email = (EditText)findViewById(R.id.Email);
-        Pass = (EditText)findViewById(R.id.Pass);
+        username = (EditText)findViewById(R.id.username);
         dob = (EditText)findViewById(R.id.dob);
+        password = (EditText)findViewById(R.id.password);
 
 
-        u = (TextView)findViewById(R.id.user);
-        p = (TextView)findViewById(R.id.user);
+        u = (TextView)findViewById(R.id.u);
+        p = (TextView)findViewById(R.id.p);
         e = (TextView)findViewById(R.id.e);
-        d = (TextView)findViewById(R.id.dob);
+        d = (TextView)findViewById(R.id.d);
 
 
         Login = (Button)findViewById(R.id.login);
         signup = (Button)findViewById(R.id.signup);
 
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                DBHelper dbh=new DBHelper(getApplicationContext());
+                Contacts cont=new Contacts("username.getText().toString()","password.getText().toString()","Email.getText().toString()","dob.getText().toString()");
+                dbh.addContact(cont);
                 Intent intentObj = new Intent(MainActivity.this,Activity2.class);
-               // sp = getSharedPreferences("userid",MODE_PRIVATE);
-                SharedPreferences.Editor editor = getSharedPreferences("pref",MODE_PRIVATE).edit();
-                editor.putString("Username",UserId.getText().toString());
-                editor.putString("Email",Email.getText().toString());
-                editor.putString("Password",Pass.getText().toString());
-                editor.putString("dob",dob.getText().toString());
-                editor.apply();
                 startActivity(intentObj);
 
-    }
-});
+            }
+        });
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,5 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
 }

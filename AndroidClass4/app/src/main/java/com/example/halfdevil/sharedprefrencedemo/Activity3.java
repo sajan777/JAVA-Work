@@ -23,7 +23,7 @@ public class Activity3 extends AppCompatActivity {
 
         username = (EditText)findViewById(R.id.username);
         password = (EditText)findViewById(R.id.password);
-        email = (EditText)findViewById(R.id.email);
+        email = (EditText)findViewById(R.id.user);
         dob = (EditText)findViewById(R.id.dob);
 
 
